@@ -1,0 +1,86 @@
+/* Flexbox layout for sticky footer */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+/* Color palette inspired by logo: orange, brown, beige */
+:root {
+  --primary: #d2691e;     /* orange */
+  --secondary: #5c4033;   /* brown */
+  --background: #f5f5dc;  /* beige */
+  --hover: #e07b39;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--secondary);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  color: white;
+  padding: 10px 20px;
+}
+
+#logo {
+  height: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav li:hover {
+  background-color: var(--hover);
+  transform: scale(1.05);
+}
+
+nav li.active {
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+footer {
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
