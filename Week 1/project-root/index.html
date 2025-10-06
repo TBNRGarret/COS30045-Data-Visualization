@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PowerSmart</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -20,11 +21,13 @@
     </header>
 
     <main>
+      <!-- Home Section -->
       <section id="home" class="page active">
         <h1>Welcome to PowerSmart</h1>
         <p>Explore how Australians can reduce energy bills with smarter appliance choices. Our platform highlights energy-efficient products and provides insights into national energy trends.</p>
       </section>
 
+      <!-- Televisions Section -->
       <section id="televisions" class="page">
         <h1>Televisions</h1>
         <p>Energy consumption of popular TV models in Australia:</p>
@@ -34,6 +37,11 @@
           <li>Sony Bravia – 110 kWh/year</li>
         </ul>
 
+        <!-- D3 Container -->
+        <div id="d3-container"></div>
+        <svg width="200" height="100" style="border:1px solid #ccc;"></svg>
+
+        <!-- Energy Snapshot -->
         <h2>Australian Energy Snapshot (2023–24)</h2>
         <img src="assets/oke1.jpg" alt="Australian Energy Statistics 2023–24" style="width:100%; max-width:700px; margin-bottom:20px;" />
 
@@ -47,6 +55,7 @@
         <p>The Sankey diagram above illustrates the flow of energy from sources like coal, gas, oil, and renewables through transformation processes and into final consumption sectors such as transport, industry, and residential use. In 2023–24, Australia produced 19,252 PJ of primary energy, with 67% exported—most of it coal and gas.</p>
       </section>
 
+      <!-- About Section -->
       <section id="about" class="page">
         <h1>About Us</h1>
         <p>We help Australians make informed decisions about appliance energy use. Our mission is to promote sustainability and reduce household energy consumption through education and data-driven insights.</p>
@@ -58,6 +67,8 @@
     <p>&copy; <span id="year"></span> Vũ Lê Hoàng. Website code generated with Copilot assistance.</p>
   </footer>
 
+  <!-- Scripts -->
+  <script src="d3_script.js"></script>
   <script src="script.js"></script>
 </body>
-</html>
+</html>  
