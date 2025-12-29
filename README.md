@@ -15,7 +15,3 @@ This repository contains the implementation for the CSIRO Pasture Biomass Predic
 - `train.py`: Training loop with Huber Loss and Freeze/Unfreeze logic.
 - `dataset.py`: Data preprocessing (Long-to-Wide conversion) and Albumentations.
 
-## 🛠️ Usage
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
